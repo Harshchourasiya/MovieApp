@@ -1,10 +1,7 @@
-
-
-Uploading Untitled.mp4…
-
 # Movie App for Android
 This App is developed in Android Studio ( Java ). 
 
+![Untitled design (3)](https://user-images.githubusercontent.com/48551992/130317290-27a4754a-56ab-4d12-84b0-449e9c40bdb0.gif)
 
 ## App Features
 
