@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/day_background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title"
+            style="@style/for_heading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/more"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="more"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="240dp" />
+</LinearLayout>

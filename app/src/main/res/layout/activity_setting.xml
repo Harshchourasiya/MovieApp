@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/day_background_color"
+    tools:context=".Setting.Setting">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_for_others" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="@string/basic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/for_movie_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:paddingHorizontal="20dp"
+                    android:text="@string/dark_mode"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <Switch
+                    android:id="@+id/darkModeSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/logout"
+                style="@style/for_movie_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="15dp"
+                android:paddingStart="35dp"
+                android:text="@string/logout"
+                android:textColor="@color/text_color"
+                android:textSize="20dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="@string/app_info" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/share"
+                style="@style/for_movie_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="15dp"
+                android:paddingStart="35dp"
+                android:text="@string/share"
+                android:textColor="@color/text_color"
+                android:textSize="20dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/rate"
+                style="@style/for_movie_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="15dp"
+                android:paddingStart="35dp"
+                android:text="@string/rate"
+                android:textColor="@color/text_color"
+                android:textSize="20dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/remove"
+                style="@style/for_movie_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="15dp"
+                android:paddingStart="35dp"
+                android:text="@string/remove"
+                android:textColor="@color/text_color"
+                android:textSize="20dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:text="@string/social" />
+
+            <LinearLayout
+                android:id="@+id/facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/facebook" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/for_movie_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="@string/facebook"
+                    android:textColor="@color/text_color"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/instagram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/instagram" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/for_movie_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="@string/instagram"
+                    android:textColor="@color/text_color"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/twitter" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/for_movie_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="@string/twitter"
+                    android:textColor="@color/text_color"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

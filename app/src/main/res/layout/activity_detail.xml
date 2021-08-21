@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/day_background_color"
+    app:layoutDescription="@xml/activity_detail_scene">
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:alpha="0"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parent"
+        android:layout_width="120dp"
+        android:layout_height="210dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginTop="100dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundImage"
+        app:layout_constraintVertical_bias="0.7">
+
+        <ImageView
+            android:id="@+id/poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/name"
+        style="@style/for_movie_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginBottom="6dp"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toTopOf="@+id/tagLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tagLine"
+        style="@style/for_movie_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="5dp"
+        android:textColor="@color/text_color"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/overview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/overview"
+        style="@style/for_movie_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:letterSpacing=".04"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tagLine" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/overview" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundImage">
+
+        <!--        Code for rating -->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:id="@+id/rate_progress"
+                style="@style/CircularDeterminateProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rate"
+                style="@style/for_movie_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_time" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/for_movie_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_like_unfilled" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

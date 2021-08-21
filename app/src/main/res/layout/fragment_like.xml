@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/day_background_color"
+    tools:context=".Like.Like">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:id="@+id/zero_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_url="@string/empty_animation" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/for_movie_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="40dp"
+            android:text="@string/zero_like"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_to_like_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_url="@string/login_animation" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/login_to_like"
+            style="@style/for_movie_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/login_to_like"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="20sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:text="@string/login_text" />
+    </LinearLayout>
+</FrameLayout>

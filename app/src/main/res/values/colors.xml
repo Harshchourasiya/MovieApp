@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="link">#0645AD</color>
+    <color name="text_color">#000</color>
+    <color name="light_main_color">#3f72af</color>
+    <color name="day_background_color">#f9f7f7</color>
+    <color name="day_main_color">#112d4e</color>
+    <color name="end_progress">#00BC00</color>
+    <color name="start_progress">#467701</color>
+    <color name="poster_text_color">#FFF</color>
+    <color name="day_status">#C1BFBF</color>
+</resources>

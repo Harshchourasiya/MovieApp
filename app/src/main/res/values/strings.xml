@@ -1,0 +1,71 @@
+<resources>
+
+<!--    App Name And App tagline-->
+    <string name="app_name">Movies</string>
+    <string name="app_tagline">Movies Love is Forever</string>
+
+<!--    Login Activity Details -->
+    <string name="login_text">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register_underline"><u>Register</u></string>
+    <string name="register">Register</string>
+    <string name="or">OR</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="retry">Retry</string>
+    <string name="password_hint">Must contains 5 letter/digit</string>
+    <string name="already_created">Already Account Created</string>
+
+<!--    Main Activity Bottom Navigation and Drawer Navigation-->
+    <string name="home">Home</string>
+    <string name="category">Category</string>
+    <string name="like">Like</string>
+    <string name="search">Search</string>
+    <string name="communication">Communication</string>
+    <string name="setting">Settings</string>
+    <string name="rate">Rate Us</string>
+    <string name="share">Share it</string>
+    <string name="remove">Remove Ads</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+<!--    Home Content-->
+    <string name="day_treading">Trending</string>
+
+<!--    Search Activity Content-->
+    <string name="empty">Enter Something to Search</string>
+    <string name="top_search">Top Searches</string>
+
+    <!--    Like Fragment Content-->
+    <string name="login_to_like">Login to Like</string>
+    <string name="zero_like">You have not like anything yet</string>
+
+<!--    Purchasing Content-->
+    <string name="purchase">Thank You for Purchasing</string>
+    <string name="purchase_fail">Failed!</string>
+
+<!--    Setting Activity Content-->
+    <string name="dark_mode">Dark Mode</string>
+    <string name="basic">Basic</string>
+    <string name="logout">Logout</string>
+    <string name="app_info">App Info</string>
+    <string name="social">Social Media</string>
+    <string name="facebook">Facebook Page</string>
+    <string name="instagram">Instagram Page</string>
+    <string name="twitter">Twitter Page</string>
+    <string name="sure">Are you Sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--    For Lottie animation Url-->
+    <string name="searching_animation">https://assets1.lottiefiles.com/packages/lf20_4cntnmut.json</string>
+    <string name="empty_animation">https://assets2.lottiefiles.com/datafiles/vhvOcuUkH41HdrL/data.json</string>
+    <string name="login_animation">https://assets7.lottiefiles.com/packages/lf20_bHVEVT.json</string>
+    <string name="result_not_found">https://assets6.lottiefiles.com/temp/lf20_dzWAyu.json</string>
+
+<!--    Ads UNIT ID-->
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial">ca-app-pub-3940256099942544/1033173712</string>
+    
+</resources>
